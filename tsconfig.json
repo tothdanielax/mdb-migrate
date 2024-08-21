@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    /* Base Options: */
+    "lib": ["ES2022"],
+    "skipLibCheck": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "module": "NodeNext",
+    "target": "ESNext",
+    "moduleDetection": "force",
+    "moduleResolution": "NodeNext",
+    "verbatimModuleSyntax": true,
+    "noErrorTruncation": true,
+    "outDir": "dist",
+    "noEmit": false,
+    /* Strictness */
+    "noUncheckedIndexedAccess": true,
+    "allowJs": true,
+    "checkJs": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "forceConsistentCasingInFileNames": true,
+    /* Path Aliases */
+    "baseUrl": ".",
+    "paths": {
+      "@tests/*": ["./tests/*"],
+      "@scripts/*": ["./scripts/*"],
+      "mongo-migrate-ts": ["*"]
+    }
+  },
+  "include": [
+    "./**/*.ts",
+    ".next/types/**/*.ts",
+  ],
+  "exclude": ["node_modules", "dist"]
+}
